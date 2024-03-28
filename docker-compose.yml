@@ -1,0 +1,12 @@
+version: '3'
+services:
+  infinity:
+    container_name: infinity-build
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - api_token=${API_TOKEN}
+        - reddit_username=${REDDIT_USERNAME}
+    env_file:
+      - .env
