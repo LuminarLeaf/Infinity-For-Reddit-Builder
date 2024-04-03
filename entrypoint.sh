@@ -42,5 +42,6 @@ cp /Infinity-For-Reddit/app/build/outputs/apk/release/app-release.apk /Infinity.
 echo "The APK is available at /Infinity.apk"
 echo "Please run the following command to copy the APK to the host:"
 echo "  docker cp <container_id>:/Infinity.apk ."
+echo "The container id is \"infinity-build\" if you used docker compose."
 
 exit 0
