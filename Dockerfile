@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk:11-latest
+FROM azul/zulu-openjdk:17-latest
 
 ARG api_token=""
 ARG reddit_username=""
