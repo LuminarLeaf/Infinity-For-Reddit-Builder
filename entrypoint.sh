@@ -24,7 +24,7 @@ cd /Infinity-For-Reddit
 
 # change api token, user agent and redirect uri in the source code
 APIUTILS_FILE="/Infinity-For-Reddit/app/src/main/java/ml/docilealligator/infinityforreddit/utils/APIUtils.java"
-sed -i "s/NOe2iKrPPzwscA/${API_TOKEN}/g" "${APIUTILS_FILE}"
+sed -i "s/public static final String CLIENT_ID = \".*\";/public static final String CLIENT_ID = \"${API_TOKEN}\";/g" "${APIUTILS_FILE}"
 sed -i "s/infinity:\/\/localhost/${REDIRECT_URI}/g" "${APIUTILS_FILE}"
 sed -i "s/public static final String USER_AGENT = \".*\";/public static final String USER_AGENT = \"${USER_AGENT}\";/g" "${APIUTILS_FILE}"
 
